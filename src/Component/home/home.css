@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.complex {
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 128px 80px;
+
+}
+
+/* ===================================================home start=================================================== */
+.home-img {
+    display: inline-flex;
+    transform: rotate(1.79deg);
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.home-img {
+    position: relative;
+}
+
+.home-first {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/script2.png);
+    background-position: right top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.homes {
+    width: 100%;
+    height: 100vh;
+}
+
+.home-init {
+    position: relative;
+    padding: 180px 0px 0px 0px;
+}
+
+.home-init h6 {
+    color: #000000;
+    width: 220px;
+    height: 24px;
+    opacity: 0.8px;
+}
+
+.home-init h6 span {
+    color: #0078FF;
+}
+
+.home-init h1 {
+    width: 518px;
+    height: 210px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #14171A;
+}
+
+.home-init p {
+    width: 461px;
+    height: 112px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.home-init h1 span {
+    color: #0078FF;
+}
+
+.home-btn {
+    padding-top: 25px;
+}
+
+.home-btn .btn1 {
+    width: 220px;
+    height: 44px;
+    padding: 7px 24px 10px 24px;
+    border-radius: 32px;
+    gap: 4px;
+    color: #fff;
+    border: 2px solid #0078FF;
+    background: #0078FF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.home-btn .btn2 {
+    width: 216px;
+    height: 44px;
+    padding: 7px 24px 10px 24px;
+    border-radius: 32px;
+    gap: 4px;
+    color: #14171A;
+    border: 2px solid #14171A;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@media screen and (max-width: 1124px) {
+    .homes {
+        width: 100vw;
+    }
+
+    .home-init {
+        padding: 70px 0px 0px 0px;
+    }
+
+    .home-btn {
+        padding-top: 10px;
+    }
+
+    .home-init h1 {
+        width: 518px;
+        height: 210px;
+        font-size: 46px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+}
+
+/* ========================================seconds start ============================================== */
+.seconds {
+    width: 100%;
+    height: 500px;
+    top: 964px;
+    padding: 0px 80px 0px 0px;
+    gap: 64px;
+
+}
+
+.second-img img {
+    width: 42px;
+    height: 42px;
+}
+
+.second-cards {
+    padding: 64px 0px 0px 0px;
+    width: 579px;
+    height: 184px;
+    gap: 8px;
+}
+
+.second-cards h4 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0em;
+    color: #14171A;
+    text-align: left;
+}
+
+.second-cards p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #596370;
+    text-align: left;
+}
+
+
+@media screen and (min-width: 1200px) {
+    .flips-cards {
+        gap: 21px;
+        padding: 64px 80px 0px 0px;
+    }
+
+  
+}
+
+
+
+.flips-cards {
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    height: 252px;
+    gap: 81px;
+    padding: 94px 00px 0px 00px;
+}
+
+.flip-card {
+    width: 100%;
+    height: 252px;
+    gap: 81px;
+}
+
+.flip-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.flip-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.flip-card-back p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    color: #14171A;
+    text-align: center;
+
+}
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    width: 372px;
+    height: 252px;
+
+    border-radius: 16px;
+    border: 2px;
+    gap: 32px;
+
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 340px;
+    height: 252px;
+    text-align: center;
+    transition: all ease 1.5s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 2px solid #ebebeb;
+    border-radius: 16px;
+    background-color: #f7f3f3;
+
+
+
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-inner .flip-card-front img {
+    width: 128px;
+    height: 128px;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    color: black;
+}
+
+.flip-card-front:hover {
+    background-color: #fff;
+    border-radius: 16px;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #f7f3f3;
+    border-radius: 16px;
+    color: #14171A;
+    transform: rotateY(180deg);
+    width: 340px;
+    height: 194px;
+    border: 2px;
+    gap: 32px;
+}
+
+.flip-back-cards {
+    padding: 24px 16px 24px 16px;
+}
+
+.flip-card-back a {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0078FF;
+}
+
+.flip-card-back a .icon3 {
+    width: 24px;
+    height: 24px;
+    color: #0078FF;
+}
+
+@media screen and (max-width: 1124px) {
+    .complex {
+        padding: 128px 60px 128px 60px;
+    }
+    .flips-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .complex {
+        padding: 128px 50px 128px 50px;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    .complex {
+        padding: 128px 40px 128px 40px;
+    }
+    .flips-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width: 600px) {
+    .complex {
+        padding: 128px 40px 128px 40px;
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .complex {
+        padding: 108px 30px 108px 30px;
+
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .complex {
+        padding: 108px 20px 108px 20px;
+
+    }
+}
+
+
+
+
+/* ===================================================thurd start=================================================== */
+.thurd-card {
+    display: flex;
+
+}
+
+.thurds {
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 160px 80px 0px 0px
+}
+
+.thurd-bt button {
+    width: 188px;
+    height: 44px;
+    display: flex;
+    margin: 25px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+    border: 1px;
+    gap: 10px;
+    font-size: 1.5rem;
+    background: #fff;
+    border: 2px solid #bebebe;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.thurd-bt button:hover {
+    background: #0078FF;
+    color: #fff;
+    border: 2px solid #0078FF;
+    transition: all ease .5s;
+    transform: translateX(25px);
+}
+
+.bt .thurd-award img {
+    width: 756px;
+    height: 552px;
+    border-radius: 32px;
+    padding-left: 61px;
+}
+
+.bt .thurd-award source {
+    border-radius: 32px;
+    margin-left: 55px;
+}
+
+.thurd-card .h1 {
+    width: 363px;
+    height: 343px;
+    gap: 64px;
+    display: block;
+    position: relative;
+    top: 140px;
+}
+
+.thurd-card .h1 h3 {
+    width: 363px;
+    height: 83px;
+    color: #000000;
+
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/* ===================================================thurd end=================================================== */
